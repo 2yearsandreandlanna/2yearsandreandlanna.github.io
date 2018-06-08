@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Game!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<center>
+			<div id='container' class="container">
+				<h2 id="question_header">Question:</h2>
+			</div>
+
+		</body>
+	</center>
+	</html>
+	<script type="text/javascript">
+	// /Users/AndreRuiz/Downloads/pics_w_lanna
+
+	if (localStorage.getItem('points') == null) {
+		localStorage.setItem('points', 0)
+	}
+	number = Math.floor((Math.random() * 15) + 1);
+	number =1;
+	//At what time did you text me "Hey it\'s Lanna" the day after we met?
+	remaining_qs = 10 - localStorage.getItem('points')
+	message = '<h1>Get 10 correct in a row and win a price! You only need ' + remaining_qs +' more</h1>'
+	alert(number)
+	switch(number){
+		case 1:
+		appending = '<form action="action_page.php" method="get" name="time_first_time_form"><div class="form-group"><label>time</label><div class="radio"><label><input type="radio" name=\'option\' value="8_10">8:10AM</label></div><div class="radio"><label><input type="radio" name=\'option\' value="7_23">7:23AM</label></div><div class="radio"><label><input type="radio" name=\'option\' value="7_50">7:50AM</label></div><button name="time_first_time_button" value="yes" type="submit" class="btn btn-default">Submit</button></form></div>'
+		$(document).ready(function(){
+			$("#container").append(message);
+			$("#question_header").append(appending);
+		});
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
+		case 12:
+		case 13:
+		case 14:
+		case 15:
+	}
+</script>
